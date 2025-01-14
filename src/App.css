@@ -1,0 +1,17 @@
+.message {
+  margin: auto;
+  width: 78vw;
+  height: 78vh;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 8%;
+}
+
+.message h1,h2 {
+  margin: 0;
+}
