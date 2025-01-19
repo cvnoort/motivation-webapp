@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faFacebook, 
-  faInstagram, 
   faXTwitter, 
   faBluesky, 
   faLinkedin, 
@@ -17,7 +16,6 @@ function Sharing() {
   return (
     <div className="sharing">
       <a href={"https://www.facebook.com/sharer/sharer.php?u=" + URL} target="_blank"> <FontAwesomeIcon icon={faFacebook} /> </a>
-      <FontAwesomeIcon icon={faInstagram} />
       <FontAwesomeIcon icon={faXTwitter} />
       <FontAwesomeIcon icon={faBluesky} />
       <a href={"https://www.linkedin.com/sharing/share-offsite/?url=" + URL} target="_blank"> <FontAwesomeIcon icon={faLinkedin} /> </a>
