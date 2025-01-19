@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { 
   faFacebook, 
   faXTwitter, 
@@ -21,6 +22,7 @@ function Sharing() {
       <a href={"https://www.linkedin.com/sharing/share-offsite/?url=" + URL} target="_blank"> <FontAwesomeIcon icon={faLinkedin} /> </a>
       <FontAwesomeIcon icon={faWhatsapp} />
       <a href={"mailto:?subject=Some%20inspiration%20for%20you&body=" + URL}> <FontAwesomeIcon icon={faEnvelope} /> </a>
+      <FontAwesomeIcon icon={faLink} onClick={() => {navigator.clipboard.writeText(URL)}} />
     </div>
   );
 }
