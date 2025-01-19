@@ -4,7 +4,6 @@ import {
   faXTwitter, 
   faBluesky, 
   faLinkedin, 
-  faSlack, 
   faWhatsapp 
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -19,7 +18,6 @@ function Sharing() {
       <FontAwesomeIcon icon={faXTwitter} />
       <FontAwesomeIcon icon={faBluesky} />
       <a href={"https://www.linkedin.com/sharing/share-offsite/?url=" + URL} target="_blank"> <FontAwesomeIcon icon={faLinkedin} /> </a>
-      <FontAwesomeIcon icon={faSlack} />
       <FontAwesomeIcon icon={faWhatsapp} />
     </div>
   );
