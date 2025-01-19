@@ -20,7 +20,7 @@ function Sharing() {
       <FontAwesomeIcon icon={faInstagram} />
       <FontAwesomeIcon icon={faXTwitter} />
       <FontAwesomeIcon icon={faBluesky} />
-      <FontAwesomeIcon icon={faLinkedin} />
+      <a href={"https://www.linkedin.com/sharing/share-offsite/?url=" + URL} target="_blank"> <FontAwesomeIcon icon={faLinkedin} /> </a>
       <FontAwesomeIcon icon={faSlack} />
       <FontAwesomeIcon icon={faWhatsapp} />
     </div>
