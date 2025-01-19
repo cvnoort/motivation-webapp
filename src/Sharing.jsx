@@ -15,7 +15,7 @@ function Sharing() {
   return (
     <div className="sharing">
       <a href={"https://www.facebook.com/sharer/sharer.php?u=" + URL} target="_blank"> <FontAwesomeIcon icon={faFacebook} /> </a>
-      <FontAwesomeIcon icon={faXTwitter} />
+      <a href={"https://twitter.com/intent/tweet?url=" + URL} target="_blank"> <FontAwesomeIcon icon={faXTwitter} /> </a>
       <FontAwesomeIcon icon={faBluesky} />
       <a href={"https://www.linkedin.com/sharing/share-offsite/?url=" + URL} target="_blank"> <FontAwesomeIcon icon={faLinkedin} /> </a>
       <FontAwesomeIcon icon={faWhatsapp} />
