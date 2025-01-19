@@ -11,9 +11,12 @@ import {
 
 
 function Sharing() {
+
+  const URL = window.location.href.slice(7);
+
   return (
     <div className="sharing">
-      <FontAwesomeIcon icon={faFacebook} />
+      <a href={"https://www.facebook.com/sharer/sharer.php?u=" + URL} target="_blank"> <FontAwesomeIcon icon={faFacebook} /> </a>
       <FontAwesomeIcon icon={faInstagram} />
       <FontAwesomeIcon icon={faXTwitter} />
       <FontAwesomeIcon icon={faBluesky} />
