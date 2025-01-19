@@ -39,4 +39,9 @@
 .sharing svg {
   height: 4vh;
   color: #242424;
+  opacity: 0.8;
+}
+
+.sharing svg:hover {
+  opacity: 1;
 }
