@@ -1,3 +1,5 @@
+import Sharing from "./Sharing";
+
 function Message() {
 
   // Get a random background color from selection
@@ -16,8 +18,11 @@ function Message() {
 
   return (
     <div className="message" style={{backgroundColor:randomColor()}}>
-      <h1>Remember:</h1>
-      <h2>{randomQuote()}</h2>
+      <div className="quote">
+        <h1>Remember:</h1>
+        <h2>{randomQuote()}</h2>
+      </div>
+      <Sharing />
     </div>
   );
 }
