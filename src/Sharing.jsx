@@ -12,7 +12,7 @@ import {
 
 function Sharing() {
 
-  const URL = window.location.href.slice(7);
+  const URL = window.location.href.slice(8);
 
   return (
     <div className="sharing">
