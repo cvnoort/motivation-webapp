@@ -14,7 +14,7 @@ function TextQuotes() {
       "Every strike brings me closer to the next home run. –Babe Ruth",
       "Life is what happens to you while you’re busy making other plans. –John Lennon",
       "We become what we think about. –Earl Nightingale",
-      "The best time to plant a tree was 20 years ago. The second best time is now.",
+      "The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb",
       "I am not a product of my circumstances. I am a product of my decisions. –Stephen Covey",
       "Go confidently in the direction of your dreams.  Live the life you have imagined. –Henry David Thoreau",
       "Fall seven times and stand up eight.",
@@ -24,7 +24,7 @@ function TextQuotes() {
     let selectedBG = BGImg();
 
     let sectionStyle = {
-      backgroundImage: `linear-gradient(0deg, rgba(113, 0, 66, 0.74), rgba(116, 0, 68, 0.7)), url(${selectedBG})`,
+      backgroundImage: `linear-gradient(0deg, rgb(79, 0, 46), rgba(131, 0, 77, 0.75)), url(${selectedBG})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
