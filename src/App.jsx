@@ -1,10 +1,10 @@
 import './App.css';
-import TextQuotes from './TextQuotes';
+import Message from "./Message";
 
 function App() {
   return (
     <> 
-      <TextQuotes/>
+      <Message/> 
     </>
   );
 }
