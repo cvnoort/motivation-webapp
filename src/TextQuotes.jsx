@@ -30,7 +30,7 @@ function TextQuotes() {
     };
 
     return (
-    <div className="quotes-section" style={sectionStyle}>
+      <div className="quotes-section" style={sectionStyle}>
         <h2>{randomQuote}</h2>
       </div>
     );
