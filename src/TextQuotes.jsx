@@ -1,4 +1,3 @@
-//import RandBGImg from './BackgroundImgsAPI';
 import BGImg from './BackgroundImgs'; 
 
 function TextQuotes() {
@@ -24,7 +23,7 @@ function TextQuotes() {
     let selectedBG = BGImg();
 
     let sectionStyle = {
-      backgroundImage: `linear-gradient(0deg, rgb(79, 0, 46), rgba(131, 0, 77, 0.75)), url(${selectedBG})`,
+      backgroundImage: `linear-gradient(0deg, rgb(95, 0, 55), rgba(208, 0, 121, 0.20)), url(${selectedBG})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
