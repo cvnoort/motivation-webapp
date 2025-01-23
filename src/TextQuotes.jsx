@@ -1,4 +1,5 @@
 import BGImg from './BackgroundImgs'; 
+import Sharing from './Sharing';
 
 function TextQuotes() {
     // Get a random quote to display
@@ -21,6 +22,7 @@ function TextQuotes() {
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
     let selectedBG = BGImg();
+    console.log(selectedBG);
 
     let sectionStyle = {
       backgroundImage: `linear-gradient(0deg, rgb(95, 0, 55), rgba(208, 0, 121, 0.20)), url(${selectedBG})`,
@@ -32,6 +34,7 @@ function TextQuotes() {
     return (
       <div className="quotes-section" style={sectionStyle}>
         <h2>{randomQuote}</h2>
+        <Sharing />
       </div>
     );
   }
