@@ -1,10 +1,17 @@
-import './App.css';
-import Message from "./Message";
+import './index.css';
+import TextQuotes from "./Message";
+import React, { useState } from 'react';
 
 function App() {
+  const [category, setCategory] = useState('all');
+
+  const handleCategoryChange = (event) => {
+    setCategory(event.target.value);
+  };
+  
   return (
     <> 
-      <Message/> 
+      <TextQuotes/> 
     </>
   );
 }

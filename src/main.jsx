@@ -1,10 +1,31 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import { useState } from 'react';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App/>
-  </StrictMode>,
-)
+function Main() {
+  const handleRefresh = () => {
+    const refreshPageButton = document.getElementById('refreshButton');
+    if (refreshPageButton) {
+      refreshPageButton.addEventListener('click', () => {
+        location.reload();
+      });
+    }
+  };
+
+  return (
+    <StrictMode>
+      <div>
+        <button id="refreshButton" onClick={handleRefresh}>Refresh</button>
+      </div>
+    </StrictMode>
+  );
+}
+
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  createRoot(rootElement).render(<Main />);
+}
