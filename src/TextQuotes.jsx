@@ -34,7 +34,7 @@ function TextQuotes() {
     return (
       <div className="quotes-section" style={sectionStyle}>
         <h2>{randomQuote}</h2>
-        <Sharing text={randomQuote} />
+        <Sharing text={randomQuote} image={selectedBG} />
       </div>
     );
   }
