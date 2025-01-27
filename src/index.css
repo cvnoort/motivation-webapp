@@ -20,3 +20,11 @@ nav {
   font-size: 7vh;
   text-align: center;
 }
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  nav {
+    font-size: 5vh;
+  }
+}
