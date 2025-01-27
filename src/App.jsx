@@ -1,5 +1,6 @@
 import './index.css';
-import TextQuotes from "./Message";
+import './App.css';
+import TextQuotes from './TextQuotes';
 import React, { useState } from 'react';
 
 function App() {
@@ -9,11 +10,25 @@ function App() {
     setCategory(event.target.value);
   };
   
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   return (
     <> 
-      <TextQuotes/> 
+           <h1 className="title">Get Inspired</h1>
+      <select value={category} onChange={handleCategoryChange}>
+        <option value="all">All</option>
+        <option value="motivational">Motivational</option>
+        <option value="inspirational">Inspirational</option>
+      </select>
+      <TextQuotes category={category} />
+      <button className="refresh-button" onClick={handleRefresh}>Get Inspired Today!</button>
     </>
   );
 }
 
 export default App;
+
+
+

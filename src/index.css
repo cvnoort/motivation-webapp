@@ -1,9 +1,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,46 +12,29 @@ nav {
   margin: 0;
   width: 100vw;
   height: 14vh;
-
   color: beige;
   font-weight: bold;
   font-size: 7vh;
   text-align: center;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.refresh-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
 }
 
-.quote-container {
-    text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.refresh-button:hover {
+  background-color: #0056b3;
 }
 
-select {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007BFF;
-    color: white;
-}
-
-button:hover {
-    background-color: #0056b3;
+.refresh-button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
 }
