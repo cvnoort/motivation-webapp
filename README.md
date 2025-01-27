@@ -1,5 +1,7 @@
 # Motivation webapp
 
+[![pages-build-deployment](https://github.com/cvnoort/motivation-webapp/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/cvnoort/motivation-webapp/actions/workflows/pages/pages-build-deployment)
+
 Get inspired!
 
 React web app created with Vite for
