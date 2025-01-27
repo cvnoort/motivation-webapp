@@ -3,4 +3,4 @@ function BGImg() {
     return randomImage;
   }
 
-  export default BGImg;
+export default BGImg;
