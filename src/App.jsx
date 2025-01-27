@@ -16,14 +16,16 @@ function App() {
 
   return (
     <> 
-           <h1 className="title">Get Inspired</h1>
+      <nav>
+      <h1 className="title">Get Inspired</h1>
       <select value={category} onChange={handleCategoryChange}>
         <option value="all">All</option>
         <option value="motivational">Motivational</option>
         <option value="inspirational">Inspirational</option>
       </select>
-      <TextQuotes category={category} />
       <button className="refresh-button" onClick={handleRefresh}>Get Inspired Today!</button>
+      </nav>
+      <TextQuotes category={category} />
     </>
   );
 }
