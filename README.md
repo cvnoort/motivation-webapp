@@ -19,6 +19,7 @@ The web app can be viewed in a browser
 or run locally by cloning the repository as [described below](#development).
 
 A random quote is automatically displayed on a randomly selected photo.
+The "Get Inspired Today!" button refreshes the page with a new quote.
 The social media and e-mail buttons below the quote may be used
 to share the page on a variety of platforms.
 
